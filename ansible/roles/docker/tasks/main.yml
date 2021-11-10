@@ -2,9 +2,9 @@
 # tasks file for docker
 - name: create image docker
   docker_image:
-    name: devops
+    name: pipeline angular
     build:
-     path: /var/lib/jenkins/workspace/devops
+     path: /var/lib/jenkins/workspace/pipeline angular
      pull: no
     source: build
     state: present
@@ -12,7 +12,7 @@
 - name: run container docker
   docker_container:
     name: Myapp_container
-    image: devops:latest
+    image: pipeline angular:latest
     state: started
     recreate: true
     ports:
