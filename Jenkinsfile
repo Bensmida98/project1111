@@ -12,16 +12,16 @@ pipeline {
             }
         }
         
-        stage('build')
+     //   stage('build')
         
-        {
-        	steps{
-        	        script{
-        	        sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml"	
+    //    {
+        	//steps{
+        	//        script{
+        	//        sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml"	
         
-        }
-        }
-        }
+     //   }
+   //     }
+      //  }
         stage('ng Build') {
              steps{
                 script{
