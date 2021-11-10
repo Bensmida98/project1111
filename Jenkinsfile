@@ -25,14 +25,14 @@ pipeline {
         stage('ng Build') {
              steps{
                 script{
-                    sh "sudo ng build"
+                    sh "ng build"
                 }
             }
         }
         stage('Docker') {
              steps{
                 script{
-                    sh "sudo ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml"
+                    sh " ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml"
                 }
             }
         }	        
