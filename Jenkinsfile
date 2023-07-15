@@ -7,7 +7,7 @@ pipeline {
                     checkout([$class: 'GitSCM', branches: [[name: '*/master']],
                         userRemoteConfigs: [[
                             credentialsId: 'c5d71fe3-c5c5-4e22-849e-4f0b3eaa1e59',
-                            url: 'https://github.com/haifgh/Myapp.git']]])
+                            url: 'https://github.com/Bensmida98/project1111.git']]])
                 }
             }
         }
